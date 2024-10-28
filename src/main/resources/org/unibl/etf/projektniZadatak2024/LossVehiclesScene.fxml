@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="772.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.projektnizadatak2024.controllers.LossVehicleSceneController">
+   <children>
+      <TableView fx:id="tableViewLossC" layoutY="2.0" prefHeight="50.0" prefWidth="634.0">
+        <columns>
+          <TableColumn fx:id="idC" prefWidth="75.0" text="ID " />
+          <TableColumn fx:id="cnC" prefWidth="106.39998626708984" text="Cijena nabavke" />
+            <TableColumn fx:id="pC" prefWidth="93.5999755859375" text="Proizvođač" />
+            <TableColumn fx:id="mC" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="sbC" prefWidth="102.4000244140625" text="Status baterije" />
+            <TableColumn fx:id="dnC" prefWidth="104.00009155273438" text="Datum nabake" />
+            <TableColumn fx:id="oC" prefWidth="75.0" text="Opis" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewLossB" layoutY="71.0" prefHeight="50.0" prefWidth="634.0">
+         <columns>
+            <TableColumn fx:id="idB" prefWidth="75.0" text="ID " />
+            <TableColumn fx:id="cbB" prefWidth="106.39998626708984" text="Cijena nabavke" />
+            <TableColumn fx:id="pB" prefWidth="93.5999755859375" text="Proizvođač" />
+            <TableColumn fx:id="mB" prefWidth="75.0" text="Model" />
+            <TableColumn fx:id="sbB" prefWidth="102.4000244140625" text="Status baterije" />
+            <TableColumn fx:id="dB" prefWidth="180.0" text="Domen" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableViewLossS" layoutY="157.0" prefHeight="64.0" prefWidth="634.0">
+         <columns>
+            <TableColumn fx:id="idS" prefWidth="75.0" text="ID " />
+            <TableColumn fx:id="cbS" prefWidth="106.39998626708984" text="Cijena nabavke" />
+            <TableColumn fx:id="pS" prefWidth="93.5999755859375" text="Proizvođač" />
+            <TableColumn fx:id="mS" prefWidth="81.5999755859375" text="Model" />
+            <TableColumn fx:id="sbS" prefWidth="96.800048828125" text="Status baterije" />
+            <TableColumn fx:id="mbS" prefWidth="181.5999755859375" text="Max brzina" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tw1" layoutX="634.0" layoutY="2.0" prefHeight="50.0" prefWidth="137.0">
+        <columns>
+          <TableColumn fx:id="ig1" prefWidth="135.2000732421875" text="Iznos gubitka" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tw2" layoutX="634.0" layoutY="71.0" prefHeight="50.0" prefWidth="137.0">
+         <columns>
+            <TableColumn fx:id="ig2" prefWidth="135.2000732421875" text="Iznos gubitka" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tw3" layoutX="634.0" layoutY="157.0" prefHeight="64.0" prefWidth="138.0">
+         <columns>
+            <TableColumn fx:id="ig3" prefWidth="135.2000732421875" text="Iznos gubitka" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

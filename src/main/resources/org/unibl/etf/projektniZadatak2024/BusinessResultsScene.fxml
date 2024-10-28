@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="333.0" prefWidth="1075.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.projektnizadatak2024.controllers.BusinessResultsSceneController">
+   <children>
+      <TableView fx:id="tableViewSummaryReport" layoutX="1.0" layoutY="27.0" prefHeight="64.0" prefWidth="1073.0">
+        <columns>
+          <TableColumn fx:id="ukupanPrihodSR" prefWidth="98.39999085664749" text="Ukupan prihod" />
+          <TableColumn fx:id="ukupanPopustSR" prefWidth="105.5999755859375" text="Ukupan popust" />
+            <TableColumn fx:id="ukupnoPromocijeSR" prefWidth="112.80006408691406" text="Ukupno promocije" />
+            <TableColumn fx:id="voznjeUziDioSR" prefWidth="127.20001220703125" text="Vožnje uži dio grada" />
+            <TableColumn fx:id="voznjeSiriDioSR" prefWidth="124.79998779296875" text="Vožnje širi dio grada" />
+            <TableColumn fx:id="ukupnoOdrzavanjeSR" prefWidth="118.4000244140625" text="Ukupno održavanje" />
+            <TableColumn fx:id="ukupnoKvaroviSR" prefWidth="104.800048828125" text="Ukupno kvarovi" />
+            <TableColumn fx:id="troskoviKompanijeSR" prefWidth="125.5999755859375" text="Troškovi kompanije" />
+            <TableColumn fx:id="porezSR" prefWidth="151.99996337890616" text="Porez" />
+        </columns>
+      </TableView>
+      <Text fill="#122b66" layoutX="15.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUMARNI IZVJEŠTAJ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableViewDailyReport" layoutY="124.0" prefHeight="214.0" prefWidth="1074.0">
+         <columns>
+            <TableColumn fx:id="datumDR" prefWidth="130.3999908566475" text="Datum" />
+            <TableColumn fx:id="ukupanPrihodDR" prefWidth="126.40003967285156" text="Ukupan prihod" />
+            <TableColumn fx:id="ukupanPopustDR" prefWidth="125.60000610351562" text="Ukupno popust" />
+            <TableColumn fx:id="ukupnoPromocijeDR" prefWidth="124.79998779296875" text="Ukupno promocije" />
+            <TableColumn fx:id="voznjeUziDioDR" prefWidth="141.60003662109375" text="Vožnje uži dio grada" />
+            <TableColumn fx:id="voznjeSiriDioDR" prefWidth="152.800048828125" text="Vožnje širi dio grada" />
+            <TableColumn fx:id="ukupnoPopravkeDR" prefWidth="121.5999755859375" text="Ukupno popravke" />
+            <TableColumn fx:id="ukupnoOdrzavanjeDR" prefWidth="149.60003662109375" text="Ukupno održavanje" />
+         </columns>
+      </TableView>
+      <Text fill="#122b66" layoutX="15.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNEVNI IZVJEŠTAJ">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

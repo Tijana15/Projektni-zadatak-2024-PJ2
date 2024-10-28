@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="610.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.projektnizadatak2024.controllers.AllVehiclesSceneController">
+   <children>
+      <TableView fx:id="tableViewCar" layoutX="1.0" layoutY="31.0" prefHeight="158.0" prefWidth="716.0">
+        <columns>
+          <TableColumn fx:id="idC" prefWidth="69.60000765323639" text="ID" />
+          <TableColumn fx:id="cnC" prefWidth="107.19994354248047" text="Cijena nabavke" />
+            <TableColumn fx:id="pC" prefWidth="89.60003662109375" text="Proizvođač" />
+            <TableColumn fx:id="mC" minWidth="3.20001220703125" prefWidth="80.79998779296875" text="Model" />
+            <TableColumn fx:id="sbC" prefWidth="104.79998779296875" text="Stanje baterije" />
+            <TableColumn fx:id="dnC" prefWidth="124.80001831054688" text="Datum nabavke" />
+            <TableColumn fx:id="oC" prefWidth="140.79998779296875" text="Opis" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewBike" layoutY="214.0" prefHeight="166.0" prefWidth="716.0">
+        <columns>
+          <TableColumn fx:id="idB" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cnB" prefWidth="113.5999984741211" text="Cijena nabavke" />
+            <TableColumn fx:id="pB" prefWidth="125.5999755859375" text="Proizvođač" />
+            <TableColumn fx:id="mB" prefWidth="112.0" text="Model" />
+            <TableColumn fx:id="sbB" prefWidth="101.60006713867188" text="Stanje baterije" />
+            <TableColumn fx:id="dB" prefWidth="186.39996337890625" text="Domen" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewScooter" layoutY="397.0" prefHeight="214.0" prefWidth="716.0">
+        <columns>
+          <TableColumn fx:id="idS" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cnS" prefWidth="111.20003509521484" text="Cijena nabavke" />
+            <TableColumn fx:id="pS" prefWidth="132.7999267578125" text="Proizvođač" />
+            <TableColumn fx:id="mS" prefWidth="107.99993896484375" text="Model" />
+            <TableColumn fx:id="sbS" prefWidth="101.60012817382812" text="Stanje baterije" />
+            <TableColumn fx:id="mbS" prefWidth="184.79998779296875" text="Max brzina" />
+        </columns>
+      </TableView>
+      <Text fill="#1d169c" layoutX="15.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARS">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#1d169c" layoutX="14.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIKES">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="#1d169c" layoutX="-1.0" layoutY="394.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SCOOTERS">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="425.0" prefWidth="701.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.unibl.etf.projektnizadatak2024.controllers.DefectsSceneController">
+   <children>
+      <TableView fx:id="tableViewDefects" layoutX="-1.0" prefHeight="426.0" prefWidth="702.0">
+        <columns>
+          <TableColumn fx:id="vrstPrevoznogSredstva" prefWidth="151.999966442585" text="Vrsta prevoznog sredstva" />
+          <TableColumn fx:id="idPrevoznogSredstva" prefWidth="192.00001525878906" text="ID prevoznog sredstva" />
+            <TableColumn fx:id="vrijeme" prefWidth="164.0" text="Vrijeme " />
+            <TableColumn fx:id="opisKvara" prefWidth="196.800048828125" text="Opis kvara" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
